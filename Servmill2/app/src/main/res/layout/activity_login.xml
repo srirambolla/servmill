@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#7FFFD4"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.servmill.www.servmill2.LoginActivity">
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login Page"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/loguser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="enter user name"
+        android:layout_margin="30dp"/>
+    <EditText
+        android:id="@+id/logmobile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="enter mobile number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/logpass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+
+        android:layout_margin="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logbutton"
+            android:text="Login"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/newuser"
+
+            android:text="Not Registered?"/>
+    </LinearLayout>
+</LinearLayout>
